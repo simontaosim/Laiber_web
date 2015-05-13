@@ -5,10 +5,13 @@ border: none;
     margin-right: 5%;
 }
 .rg_content{
-width: 60%;
+width: 30%;
     margin-top: 3%;
     margin-right: auto;
     margin-left: auto;
+       padding: 2%;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
 }
 
 .login_content{
@@ -16,6 +19,9 @@ width: 30%;
     margin-top: 3%;
     margin-right: auto;
     margin-left: auto;
+      padding: 2%;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
 }
 
 .fg_pw{

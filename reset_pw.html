@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Ulaiber重置密码</title>
+  <title>Ulaiber注册页面</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -46,26 +46,56 @@
     
     
     <div class="rg_content">
-        
-    <div class="find_pw">
-    <legend>忘记密码·请选择验证方式</legend>
-        <ul class="am-list">    
-  <li><p><span class="am-icon-envelope-o am-icon-sm"></span>
-  <a href="#">使用电子邮箱验证</a></p>
-  <p>系统将发送一份验证邮件致您在注册时认证过的电子邮箱</p>
-  </li>
-   <li><p><span class="am-icon-mobile am-icon-lg"></span>
-  <a href="#">使用手机号码验证</a></p>
-  <p>系统将发送一条带有验证信息的短信致您在注册时认证过的手机号码中</p>
-  </li>
+      <form action="" class="am-form" id="doc-vld-msg">
+  <fieldset>
+    <legend>设置新密码</legend>
  
-</ul>
+
+   <div class="am-form-group">
+      <label for="doc-vld-pwd-1">设置密码：</label>
+      <input type="password" id="doc-vld-pwd-1" placeholder="请重新设置登录密码" pattern="^\d{6,12}$" required data-foolish-msg="请输入正确位数的密码！"/>
     </div>
 
+<div class="am-form-group">
+      <label for="doc-vld-pwd-2">确认密码：</label>
+      <input type="password" id="doc-vld-pwd-2" placeholder="请在输入一次密码" data-equal-to="#doc-vld-pwd-1" required data-foolish-msg="两次密码不一致"/>
+    </div>
+    
+
+
+
+  </fieldset>
+        <button type="button" class="am-btn am-btn-secondary  am-btn-block">下&nbsp;&nbsp;一&nbsp;&nbsp;步</button>
+    </form>
     </div>  
 <!--[if (gte IE 9)|!(IE)]><    !-->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
+<script>
+    
+    $(function() {
+  $('#doc-vld-msg').validator({
+    onValid: function(validity) {
+      $(validity.field).closest('.am-form-group').find('.am-alert').hide();
+    },
+
+    onInValid: function(validity) {
+      var $field = $(validity.field);
+      var $group = $field.closest('.am-form-group');
+      var $alert = $group.find('.am-alert');
+      // 使用自定义的提示信息 或 插件内置的提示信息
+      var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+      if (!$alert.length) {
+        $alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+          appendTo($group);
+      }
+
+      $alert.html(msg).show();
+    }
+  });
+});
+</script>
 
 <!--<![endif]-->
 
