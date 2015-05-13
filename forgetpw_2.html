@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Ulaiber注册页面</title>
+  <title>Ulaiber重置密码</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -45,41 +45,26 @@
     </div>
     
     
-    <div class="rg_content">
-      <form action="" class="am-form" id="doc-vld-msg">
-  <fieldset>
-    <legend>新用户注册</legend>
+    <div class="forget_content">
+        
+    
+        
+<form action="" class="am-form" id="doc-vld-msg">
+
+  <div class="am-form-group">
+  <div class="input_account">
+   <label for="doc-ipt-3" class="col-sm-2 am-form-label">请输入用户名</label></div>
     <div class="am-form-group">
-      <label for="doc-vld-name-2">用户名：</label>
-      <input type="text" id="doc-vld-name-2" minlength="3" placeholder="只能英文字母、数字、中文中的一种或者混搭" required/>
+      <input type="text" id="doc-vld-name-2" minlength="3" placeholder="这里是输入框    " required/>
     </div>
+  </div>
 
-   <div class="am-form-group">
-      <label for="doc-vld-pwd-1">设置密码：</label>
-      <input type="password" id="doc-vld-pwd-1" placeholder="6-12位，输入字符无限制" pattern="^\d{6,12}$" required data-foolish-msg="请输入正确位数的密码！"/>
+  <div class="am-form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+     <button type="button" class="am-btn am-btn-primary am-btn-block">下&nbsp;&nbsp;一&nbsp;&nbsp;步&nbsp;&nbsp;</button>
     </div>
-
-<div class="am-form-group">
-      <label for="doc-vld-pwd-2">确认密码：</label>
-      <input type="password" id="doc-vld-pwd-2" placeholder="必须与设置密码内的内容一致" data-equal-to="#doc-vld-pwd-1" required data-foolish-msg="两次密码不一致"/>
-    </div>
-    
-<div class="am-form-group">
-      <label for="doc-vld-pwd-1-0">邀请码：</label>
-      <input type="password" id="doc-vld-pwd-1-0" placeholder="必须输入正确的邀请码才能登录" pattern="^\d{4}$" required data-foolish-msg="请输入正确的邀请码！"/>
-    </div>
-
-
-  </fieldset>
-
-        <div class="am-checkbox">
-          <label>
-            <input type="checkbox"> 阅读并且同意 <a href="">《xx服务协议xx》</a>
-          </label>
-        </div>
-    
-        <button type="button" class="am-btn am-btn-secondary  am-btn-block">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
-    </form>
+  </div>
+</form>
     </div>  
 <!--[if (gte IE 9)|!(IE)]><    !-->
 <script src="assets/js/jquery.min.js"></script>
@@ -109,6 +94,7 @@
   });
 });
 </script>
+
 
 <!--<![endif]-->
 

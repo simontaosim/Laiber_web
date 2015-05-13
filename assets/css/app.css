@@ -21,3 +21,23 @@ width: 30%;
 .fg_pw{
     float: right;
 }
+.forget_content{
+    width: 30%;
+    margin-top: 5%;
+    margin-right: auto;    
+    margin-left: auto;
+      padding: 2%;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
+}
+/*
+.find_pw{
+border:1px dashed  black;
+}*/
+.input_account{
+margin-top: 5%;
+margin-bottom: 5%;
+    margin-left: 32%;
+    margin-right: auto;
+  
+}
