@@ -10903,7 +10903,7 @@
 
         Validator.validationMessages = {
           zh_CN: {
-            valueMissing: '请填写（选择）此字段',
+            valueMissing: '请填写此字段',
             customError: {
               tooShort: '至少填写 %s 个字符',
               checkedOverflow: '至多选择 %s 项',

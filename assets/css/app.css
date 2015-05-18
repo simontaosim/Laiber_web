@@ -5,8 +5,69 @@ border: none;
     margin-right: 5%;
 }
 .rg_content{
-width: 60%;
+width: 30%;
     margin-top: 3%;
     margin-right: auto;
     margin-left: auto;
+       padding: 2%;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
 }
+
+.login_content{
+width: 30%;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+      padding: 2%;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
+}
+
+.fg_pw{
+    float: right;
+}
+.forget_content{
+    width: 30%;
+    margin-top: 5%;
+    margin-right: auto;    
+    margin-left: auto;
+      padding: 2%;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
+}
+/*
+.find_pw{
+border:1px dashed  black;
+}*/
+.input_account{
+margin-top: 5%;
+margin-bottom: 5%;
+    margin-left: 32%;
+    margin-right: auto;
+  
+}
+footer{
+text-align: center;
+bottom: auto;
+}
+hr{
+margin: 1%;
+}
+.pre_infor_tag{
+margin-top: 0;
+}
+.pre_infor_u_1{
+margin-left: 20%
+}
+.usr_img{
+    width: 34%;
+    margin-left: 28%;
+}
+.pre_infor_detai_1 {
+    font-size: 30px;
+}
+.pre_infor_right{
+    margin-left: 20%;
+}
+
